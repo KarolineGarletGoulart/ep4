@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SaberHistória</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do Site de Questões">
+        </div>
+            <div class="header-title">SaberHistória</div>
+            <div class="group">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                <input placeholder="Busque um tema" type="search" class="input">
+              </div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <h1>Questões sobre a Era Vargas</h1>
+            <div class="question"></div>
+            <h3>1-Na casa do beato Pedro Batista em Santa Brígida, na Bahia, D. Pedro II divide um espaço na parede com Getúlio Vargas. Este exemplo caracteriza um tipo de idealização da figura de mitos que ficaram sedimentados na memória popular. Podemos afirmar que Getúlio Vargas potencializou uma imagem de "pai dos pobres", em grande parte devido às(aos):</h3>
+            <input type="radio" name="quest_1" value="correta">a) medidas de caráter populista, atraindo as massas trabalhadoras. <br>
+            <input type="radio" name="quest_1" value="errada">b) medidas revolucionárias introduzidas com a reforma agrária.<br>
+            <input type="radio" name="quest_1" value="errada">c) restrições econômicas impostas aos industriais brasileiros.<br>
+            <input type="radio" name="quest_1" value="errada">d) restrições rígidas impostas à burguesia nacional e internacional.<br>
+            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
+    
+            <h3>2-Em 10 de novembro de 1937, Getúlio Vargas se dirigiu à população através do rádio: "A disputa presidencial estava levando o país à desordem. Os comunistas infiltravam-se dia a dia nas instituições nacionais. A Nação corria perigo de uma luta de classes e os partidos políticos inquietavam o nosso povo".
+    
+                Este discurso inaugura o período chamado:</h3>
+            <input type="radio" name="quest_2" value="correta">a) Estado Novo <br>
+            <input type="radio" name="quest_2" value="errada">b) República Nova <br>
+            <input type="radio" name="quest_2" value="errada">c) Era Vargas <br>
+            <input type="radio" name="quest_2" value="errada">d) Revolução de 30<br>
+            <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p><br>
+    
+            <h3>Nos primeiros anos do governo Vargas, as organizações operárias sob controle das correntes de esquerda tentaram se opor ao seu enquadramento pelo Estado. Mas a tentativa fracassou. Além do governo, a própria base dessas organizações pressionou pela legalização. Vários benefícios, como as férias e a possibilidade de postular direitos perante às Juntas de Conciliação e Julgamento, dependiam da condição de ser membro de sindicato reconhecido pelo governo. No contexto histórico retratado pelo texto, a relação entre governo e movimento sindical foi caracterizada</h3>
+            <input type="radio" name="quest_3" value="correta">a) pelo reconhecimento de diferentes ideologias políticas. <br>
+            <input type="radio" name="quest_3" value="errada">b) por um diálogo democraticamente constituído. <br>
+            <input type="radio" name="quest_3" value="errada">c) pelas benesses sociais do getulismo. <br>
+            <input type="radio" name="quest_3" value="errada">d) pela vinculação de direitos trabalhistas à tutela do Estado <br>
+            <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
+    
+            <h3>Questão 4</h3>
+            <input type="radio" name="quest_4" value="correta">Resposta 1 <br>
+            <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+            <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+            <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+            <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p><br>
+    
+            <p id="quantos_acertos"></p>
+                <button type="button" onclick="funcao_resposta()">Responder</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Site de Questões</p>
+    </footer>
+    <script src="script.js"></script>    
+</body>
+</html>
