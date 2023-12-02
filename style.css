@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Baskervville:ital@0;1 & display=swap');
+
+/* Configurações globais para redefinir estilos padrão */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.main-page{
+    display: grid;
+    color: #545454;
+    grid-template-areas:
+        "cabe cabe cabe"
+        "prin prin prin"
+        "roda roda roda"
+        "secn secn secn";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.main-header {
+    grid-area: cabe;
+    background-color: #878874;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    z-index: 99;
+}
+
+header .site-title  {
+    color: #fff;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Baskervville', serif;
+    text-decoration: none;
+}
+
+.main-header ul {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header ul li {
+    list-style: none;
+}
+.main-menu{
+    padding: 300px;
+}
+
+.main-header ul li a {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.8);
+    font-family: 'Baskervville', serif;
+    padding: 0 1em;
+    display: inline-block;
+    font-size: 18px;
+    transition: all .2s linear;
+}
+
+.main-header ul li a:hover {
+    color: #fff; 
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+}
+
+.social-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #fff;
+}
+
+.social-link svg {
+    width: 18px;
+    height: 18px;
+    fill: hwb(0 100% 0% / 0.8);
+    margin-right: 8px;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.instagram-icon:hover svg {
+    fill: #fff;
+    transform: scale(1.4);
+}
+
+.tiktok-icon:hover svg {
+    fill: #fff;
+    transform: scale(1.4);
+}
+
+.twitter-icon:hover svg {
+    fill: #fff;
+    transform: scale(1.4);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.main-container {
+    grid-area: prin;
+    text-align: center;
+}
+
+.era-vargas {
+    color: #5b5c4a;
+    font-family: "Baskerville Display", serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-container p {
+    text-align: justify;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+
+}
+
+.main-container img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Início do estilo para o footer */
+footer {
+    grid-area: roda;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px 30px;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #90897C;
+}
+
+/* Estilo para o menu no footer */
+.main-menu-footer{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+/* Estilo para os links no menu do footer */
+.main-menu-footer a {
+    color: #2a2a2a;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Efeito de hover nos links do menu do footer */
+.main-menu-footer a:hover {
+    color: #878874; 
+}
+
+/* Estilo para o logotipo no footer */
+.footer-logo {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para a imagem no logotipo do footer */
+.footer-logo img {
+    width: 100px; 
+    height: auto;
+}
+
+/* Estilo para os ícones sociais no footer */
+.footer-social-icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    width: 100%;
+}
+
+/* Estilo para os links dos ícones sociais no footer */
+.footer-social-link {
+    display: inline-block;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Define o estilo padrão para os ícones sociais no rodapé */
+.footer-social-link svg {
+    width: 25px; 
+    height: 25px;
+    fill: #2a2a2a; 
+}
+
+/* Define o estilo quando o mouse passa sobre os ícones sociais no rodapé */
+.footer-social-link:hover svg {
+    fill: #90897c;
+}
+
+/* Fim do estilo para o footer */
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Início do estilo para o section */
+
+section{
+    grid-area: secn;
+    background-color: #e2dedb;
+}
+
+/* Estilo para a classe copyright */
+.copyright {
+    text-align: center;
+    padding: 25px;
+    color: #90897c;
+}
+
+/* Estilo para os parágrafos dentro da classe copyright */
+.copyright p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Estilo para os links de privacidade */
+.privacy-link {
+    color: #2a2a2a;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Efeito de hover para os links de privacidade */
+.privacy-link:hover {
+    color: #90897c;
+}
+
+
+
